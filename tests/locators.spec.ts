@@ -12,3 +12,12 @@ test('xpath locators', async({page}) => {
     await page.waitForTimeout(5000);
 
 })
+
+test('css selectors', async({page}) => {
+
+    await page.goto('https://www.saucedemo.com/');
+    await page.locator('input#user-name').fill('standard_user');
+    await page.locator('')
+
+
+})
