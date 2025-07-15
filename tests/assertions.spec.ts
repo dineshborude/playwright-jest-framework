@@ -44,3 +44,11 @@ test('Custom Error Messages', async({page}) => {
     await expect(page,"This is Failure Message").not.toHaveTitle('Swag abs');
 
 })
+
+test('soft assertions', async ({page}) => {
+
+    await page.goto(baseURL);
+    // await expect.soft(page).not.toHaveURL(baseURL);
+    console.log('execution is continued ...')
+
+})
