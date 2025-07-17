@@ -41,7 +41,7 @@ test('Non Retrying Assertions', async ({page}) => {
 test('Custom Error Messages', async({page}) => {
 
     await page.goto(baseURL);
-    await expect(page,"This is Failure Message").not.toHaveTitle('Swag abs');
+    await expect(page,"This is Failure Message").not.toHaveTitle('Swag Labs');
 
 })
 
