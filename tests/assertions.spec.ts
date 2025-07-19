@@ -11,7 +11,7 @@ test('Assertions Tests', async ({page}) => {
     await expect(loginButton).toBeVisible();
     await expect(loginButton).toHaveCount(1);
 
-    // await expect(loginButton).toBeDisabled();
+    await expect(loginButton).toBeDisabled();
 
     await expect(loginButton).toHaveText('Login');
 
